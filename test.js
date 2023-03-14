@@ -40,6 +40,7 @@ async function mapNumberToLetters(number) {
 
   return letters;
 }
+//hola
 
 async function createImage(colors){
   const color = colors[1];
@@ -53,6 +54,7 @@ async function createImage(colors){
   });
   return bg
 }
+
   const ly2 = fs.readFileSync(path.join(overlaysDir,'ly2.png'));//'C:/Users/ivan/Desktop/MKTPLACE/overlays/ly2.png');
   const ly3 = fs.readFileSync(path.join(overlaysDir,'ly3.png'));//'C:/Users/ivan/Desktop/MKTPLACE/overlays/ly3.png');
   //const ly4 = fs.readFileSync(path.join(testImg,'app.jpeg'));//'C:/Users/ivan/Desktop/MKTPLACE/wtspImages/app.jpeg');
@@ -127,13 +129,13 @@ async function createImage(colors){
         { font: 'Arial',width: 500, height: 500,top: 100, left: 80},//Category 0
         { font: 'Arial',width: 500, height: 500,top: 300, left: 80},//desc 1
         { font: 'Arial',width: 1400, height: 150,top: 500, left: 700},//measures 2
-        { font: 'Arial',width: 100, height: 100,top: 750, left: 250},//Cost 3
-        { font: 'Arial',width: 100, height: 100,top: 1200, left: 600},//XMayor/wholesale 4
+        { font: 'Arial',width: 200, height: 200,top: 750, left: 250},//Cost 3
+        { font: 'Arial',width: 150, height: 150,top: 1450, left: 700},//XMayor/wholesale 4
         { font: 'Arial',width: 400, height: 250,top: 2400, left: 200},//Price 5
-        { font: 'Arial',width: 250, height: 250,top: 2700, left: 1200},//Packaging Qty 6
-
+        { font: 'Arial',width: 200, height: 200,top: 2500, left: 1300},//Packaging Qty 6
       ]
       imgMetadata[3] = await mapNumberToLetters(imgMetadata[3])
+
       console.log("🚀 ~ file: test.js:137 ~ imgToEdit ~ imgMetadata:", imgMetadata)
       imgObj = imgMetadata.map((imgText,index)=>({
         input:{
