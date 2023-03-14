@@ -1,0 +1,2 @@
+[0314/121035.533:INFO:CONSOLE(0)] "The Content Security Policy directive 'upgrade-insecure-requests' is ignored when delivered in a report-only policy.", source: https://web.whatsapp.com/ (0)
+[0314/121036.343:INFO:CONSOLE(14)] "Deprecation warning: use moment.updateLocale(localeName, config) to change an existing locale. moment.defineLocale(localeName, config) should only be used for creating a new locale See http://momentjs.com/guides/#/warnings/define-locale/ for more info.", source: https://web.whatsapp.com/vendor1~app.0c8e960e5dfd7020f562.js (14)
