@@ -3,6 +3,9 @@ const qrcode = require('qrcode-terminal');
 const fs = require('fs')
 const path = require('path');
 const { removeImgBg, imgToEdit, imgToPdf } = require('./test.js');
+const { hasUncaughtExceptionCaptureCallback } = require('process');
+const { captureRejectionSymbol } = require('events');
+const { isNativeError } = require('util/types');
 
 // Define the directory to save the images
 let allwUsr= ['51935403277','51958190331','51973182574','51962252080','51918483587'];
@@ -238,6 +241,9 @@ async function fbmkt(client, message, user, users){
 	}
 
 }
+
+hi 
+captureRejectionSymbol(isNativeError)
 
 async function selectService(client, message, user, users){
 	const phNm = message.from.match(/\d+/)[0]
